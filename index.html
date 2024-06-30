@@ -5,11 +5,11 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="CSS/index.css">
         <meta name="viewport" content="width=device-width">
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; script-src 'self' 'nonce-123456'">
     </head>
     <body>
         <div id="sub"></div>
-        <script>
+        <script nonce="123456">
             fetch('HTML/commonHTML/common.html')
                 .then(response => {
                     if (!response.ok) {
