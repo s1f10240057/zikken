@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>ちいかわ</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/CSS/index.css">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+
+    <div id="sub"></div>
+    <script>
+        fetch('/HTML/commonHTML/common.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sub').innerHTML = data;
+            });
+    </script>
+
+    <div id="main">
+
+        <div id="title">ちいかわ</div>
+        <table class="mainmsg" border="1">
+            <tr>
+                <th>ジャンル</th>
+                <td class = "explain">日常、ほのぼの、ダークファンタジー</td>
+                <td rowspan="4">
+                    <a href="https://www.anime-chiikawa.jp/">
+                        <img src="https://ogre.natalie.mu/media/news/comic/2023/1204/chiikawa_1.jpg?imwidth=750&imdensity=1">
+                    </a>
+                    <p id="C">© ナガノ/ちいかわ製作委員会</p>
+                </td>
+            </tr>
+            <tr>
+                <th>原作者</th>
+                <td>ナガノ</td>
+            </tr>
+            <tr>
+                <th>制作会社</th>
+                <td>動画工房</td>
+            </tr>
+            <tr>
+                <th>話数</th>
+                <td>
+                    180話(現在放送中)         
+                </td>
+            </tr>
+        </table>
+
+        <h2>簡単なあらすじ</h2>
+        <div class="mainmsg">
+            <p class="citation">
+                <strong>なんかちいさくてかわいいやつ</strong><br>
+                通称「ちいかわ」たちが送る楽しくて、ちょっぴり切ない物語。<br>
+                時にはつらいことで泣いちゃうけれど「ちいかわ」の周りにはやさしい友達や、<br>
+                個性豊かなキャラクターがたくさん！
+            </p>
+            <p>公式ページより引用</p>
+        </div>
+
+        <h2>おすすめポイント</h2>
+        <div class="mainmsg">
+            <ol>
+                <li>かわいいキャラクター
+                    <ul>
+                        <li>
+                            <p>「こういう風になって暮らしたい」という作者の願望から生まれたかわいいキャラクターが登場。<br></p>
+                        </li>
+                    </ul>
+                </li>
+                <li>バトル
+                    <ul>
+                        <li><p>突然出現する「敵」とのバトル。<br>
+                            癒し系アニメでありながら王道的な少年漫画っぽい戦闘も楽しむことができる。</p></li>
+                    </ul>
+                </li>
+
+                <li>...(微ネタバレ注意)
+                    <details>
+                        <summary>ここをクリックして内容を表示</summary>
+                        <p>
+                            この作品、基本的にほのぼのとした作風だが、"世界観だけ見れば"かなり闇が深い。<br>
+                            具体的に言えば、<br>
+                            <ul style="list-style-type: disc;" >
+                            <li>ちいかわ達を襲う「怪異」が登場。捕まると捕食されたり、体を乗っ取られたりする。<br>
+                                「怪異」の種類は様々だが、一部はちいかわの仲間が突然変異したものである。<br>
+                               実際にちいかわの同僚が「怪異」に突然変異し、討伐しに来たかつての仲間を捕食している。</li>
+                            <li>主要キャラクター間の能力・貧富の差が明確に描写されている。</li>
+                            <li>労働の概念がある。仕事はいくつかあり、その中の「討伐」は怪異との戦闘を伴うものであり、 死亡する可能性があるほど危険な仕事である。</li>
+                            </ul>
+                            <br>
+                            これ以外にも複数闇深い要素が存在する。しかし、ストーリー自体は基本的に"癒し系・ほのぼの系"であり、陰鬱とした世界観はたまに露出する程度である。<br>そのため、普通にほのぼのアニメとして視聴することが可能。
+                            このアニメは「癒し系ほのぼのアニメ」であると同時に「ダークファンタジー系バトルアニメ」であるのだ。<br>
+                            どちらの要素も楽しめるのがこのアニメの最大の魅力。
+
+                        </p>
+                    </details>
+                </li>
+
+            </ol>
+        </div>
+
+        <div class="mainmsg">
+            <span id="writer">記事作成者: Yamasaki<br>作成日: 6月29日</span>
+        </div>
+    </div>
+
+</body>
+</html>

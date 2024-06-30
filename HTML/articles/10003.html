@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>賭博黙示録カイジ</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/CSS/index.css">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+
+    <div id="sub"></div>
+    <script>
+        fetch('/HTML/commonHTML/common.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sub').innerHTML = data;
+            });
+    </script>
+
+    <div id="main">
+
+        <div id="title">賭博黙示録カイジ</div>
+        <table class="mainmsg" border="1">
+            <tr>
+                <th>ジャンル</th>
+                <td class = "explain">ギャンブル<br>サスペンス</td>
+                <td rowspan="4">
+                    <a href="https://www.ntv.co.jp/kaiji/">
+                        <img src="https://ogre.natalie.mu/media/news/comic/2011/0128/kaiji.jpg?impolicy=lt&imwidth=721&imdensity=1">
+                    </a>
+                    <p id="C">© 福本伸行/講談社・VAP・マッドハウス・NTV・D.N.ドリームパートナーズ・F</p>
+                </td>
+            </tr>
+            <tr>
+                <th>原作者</th>
+                <td>福本伸行</td>
+            </tr>
+            <tr>
+                <th>制作会社</th>
+                <td>マッドハウス</td>
+            </tr>
+            <tr>
+                <th>話数</th>
+                <td>
+                    第1期：全26話<br>
+                    第2期：全26話
+                </td>
+            </tr>
+        </table>
+
+        <h2>簡単なあらすじ</h2>
+        <div class="mainmsg">
+            <p class="citation">
+                <strong>[人生の一発逆転]</strong><br>
+                借金に追われるカイジが、命懸けのギャンブルに挑む。<br>
+                欲望と裏切りの中で、カイジは生き残るために奮闘する。
+            </p>
+            <p>原作漫画1巻裏表紙から引用</p>
+        </div>
+
+        <h2>おすすめポイント</h2>
+        <div class="mainmsg">
+            <ol>
+                <li>緊張感
+                    <ul>
+                        <li>
+                            <p>常に命懸けのギャンブルが繰り広げられ、観る者を飽きさせない展開が続く。<br>
+                            カイジの選択が命運を左右する瞬間が見所だ。</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>キャラクター
+                    <ul>
+                        <li><p>カイジをはじめ、個性豊かなキャラクターが多数登場する。</p></li>
+                        <li><p>特に、悪役の存在感が際立っており、彼らの策略とカイジの対決が見どころ。</p></li>
+                    </ul>
+                </li>
+                <li>心理戦
+                    <ul>
+                        <li><p>単なる運ではなく、心理戦や戦略が重視されるギャンブルが特徴。</p></li>
+                        <li><p>カイジが緻密な作戦で逆転を狙うシーンは圧巻。</p></li>
+                    </ul>
+                </li>
+                <li>ストーリー展開
+                    <ul>
+                        <li><p>次々と繰り広げられる新たなギャンブルや試練が、物語をスリリングに彩る。</p></li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <div class="mainmsg">
+            <span id="writer">記事作成者: Yamasaki<br>作成日: 6月30日</span>
+        </div>
+    </div>
+
+</body>
+</html>
