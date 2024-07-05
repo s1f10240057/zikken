@@ -3,27 +3,18 @@
     <head>
         <title>test</title>
         <meta charset="UTF-8">
-        <link rel = "stylesheet" type = "text/css" href = "\CSS\index.css">
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/CSS/index.css">
         <!-- "/CSS/index.css" -->
         <meta name="viewport" content="width=device-width"> 
     </head>
     <body>
 
+        <div id = "sub"></div>
 
-        <div id="sub">
-            <h1>好きなアニメ紹介wiki風サイト</h1>
-            <div id="article_view"><a href="HTML/article_view.html">記事一覧へ</a></div>
-            <div id="line"></div>
-            <div id="menu">
-                <ul>
-                    <li style="font-size: 30px;"><a href="index.html">TOP</a></li>
-                    <li><a href="/HTML/articles/10001.html">進撃の巨人</a></li>
-                    <li><a href="/HTML/articles/20001.html">ジョジョの奇妙な冒険</a></li>
-                    <li><a href="/HTML/articles/30001.html">ぼっち・ざ・ろっく</a></li>
-                    <li><a href="/HTML/articles/10002.html">ちいかわ</a></li>
-                </ul>
-            </div>
-        </div>
+
+        <script>
+            document.getElementById('sub').innerHTML = fetch("./HTML/commonHTML/common.html").then(response => response.text()).then(data => {document.getElementById('sub').innerHTML = data;});
+        </script>
         
         
 
